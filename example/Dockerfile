@@ -1,4 +1,4 @@
-FROM tdim/devbox:core
+FROM cto4/devbox:core
 
 # Image info
 LABEL maintainer="Your Name <user@domain.tld>" \
@@ -23,7 +23,7 @@ RUN apk update && \
   chmod 777 /app/custom/entrypoint.sh && \
   touch /app/custom/install
 
-# make none editable directory as
+# mount none editable directory
 # as a volume to make it writble
 # not recommended
 VOLUME [ "/sys/fs/cgroup" ]

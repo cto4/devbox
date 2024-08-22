@@ -9,26 +9,26 @@ This DevBox container is designed for an efficient and productive development en
 All variants are avilable to pull from Docker hub, just replace `latest` with the variant you need:
 
 ```bash
-docker pull tdim/devbox:latest
+docker pull cto4/devbox:latest
 ```
 
 ## Variants
 
 | **Tag**                                                               | **Description**                                                  |
 | --------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| **[core](https://github.com/Hima-Pro/devbox/blob/main/docs/core.md)** | `Latest core` image for the development environment.             |
-| **[node](https://github.com/Hima-Pro/devbox/blob/main/docs/node.md)** | `Node.js` image for running JavaScript applications.             |
-| **[php](https://github.com/Hima-Pro/devbox/blob/main/docs/php.md)**   | `PHP` image for building and running PHP applications.           |
+| **[core](https://github.com/cto4/devbox/blob/main/docs/core.md)** | `Latest core` image for the development environment.             |
+| **[node](https://github.com/cto4/devbox/blob/main/docs/node.md)** | `Node.js` image for running JavaScript applications.             |
+| **[php](https://github.com/cto4/devbox/blob/main/docs/php.md)**   | `PHP` image for building and running PHP applications.           |
 | **go** `comming soon`                                                 | `Go` image for developing Go applications and services.          |
-| **more**                                                              | [add your own variant](https://github.com/Hima-Pro/devbox/pulls) |
+| **more**                                                              | [add your own variant](https://github.com/cto4/devbox/pulls) |
 
 Please read variant's docs for more details.
 
 ## Build Extend
 
-- [See how to build images with devbox](https://github.com/Hima-Pro/devbox/blob/main/docs/build.md)
-- [Extending example](https://github.com/Hima-Pro/devbox/blob/main/example)
+- [See how to build images with devbox](https://github.com/cto4/devbox/blob/main/docs/build.md)
+- [Extending example](https://github.com/cto4/devbox/blob/main/example)
 
 ## License
 
-- [MIT License](https://github.com/Hima-Pro/devbox/blob/main/LICENSE)
+- [MIT License](https://github.com/cto4/devbox/blob/main/LICENSE)

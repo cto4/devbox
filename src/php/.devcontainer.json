@@ -1,9 +1,14 @@
 {
-  "name": "DevBox PHP Container",
-  "image": "tdim/devbox:php",
+  "name": "DevBox PHP",
+  "image": "cto4/devbox:php",
   "workspaceFolder": "/workspace",
-  "initializeCommand": "fish",
-  "mounts": ["source=${localWorkspaceFolder},target=/workspace,type=bind"],
-  "forwardPorts": ["3003:3000"],
-  "remoteUser": "root"
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+  "postCreateCommand": ["/app/php/entrypoint.sh"],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "fish"
+      }
+    }
+  }
 }

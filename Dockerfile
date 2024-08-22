@@ -6,7 +6,7 @@ LABEL maintainer="Ibrahim Megahed <tdim.dev@gmail.com>" \
   org.opencontainers.image.description="The official DevBox core environment with popular linux tools on Alpine-Linux." \
   org.opencontainers.image.authors="Ibrahim Megahed <tdim.dev@gmail.com>" \
   org.opencontainers.image.version="1.0.0" \
-  build="2-Aug-2024"
+  build="22-Aug-2024"
 
 # Image source
 COPY ./src/core /app/core
@@ -14,7 +14,7 @@ COPY ./src/core /app/core
 # Image pkgs
 RUN apk update && \
   mkdir -p /app/pkgs && \
-  apk fetch -R -o /app/pkgs btop curl fish git mc nano neofetch net-tools nmap screen shadow xz && \
+  apk fetch -R -o /app/pkgs btop curl fish git gpg gpg-agent github-cli mc nano neofetch net-tools nmap screen shadow xz && \
   chmod 777 /app/core/entrypoint.sh && \
   touch /app/core/install
 

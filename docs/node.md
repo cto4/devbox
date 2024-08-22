@@ -7,7 +7,7 @@ The official DevBox node environment with popular linux tools on Alpine-Linux.
 All variants are avilable to pull from Docker hub, just replace `node` with the variant you need:
 
 ```bash
-docker pull tdim/devbox:node
+docker pull cto4/devbox:node
 ```
 
 ## Included Packages
@@ -22,4 +22,4 @@ Feel free to explore and utilize these tools in your development process! ðŸ› ï¸
 
 ## DevContainer
 
-- You can use the [official example here](https://github.com/Hima-Pro/devbox/blob/main/src/node/.devcontainer.json) it uses node entrypoint to start with fish shell.
+- You can use the [official example here](https://github.com/cto4/devbox/blob/main/src/node/.devcontainer.json) it uses node entrypoint to start with fish shell.

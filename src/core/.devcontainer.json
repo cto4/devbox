@@ -1,9 +1,14 @@
 {
-  "name": "DevBox Core Container",
-  "image": "tdim/devbox:latest",
+  "name": "DevBox Core",
+  "image": "cto4/devbox:core",
   "workspaceFolder": "/workspace",
-  "initializeCommand": "fish",
-  "mounts": ["source=${localWorkspaceFolder},target=/workspace,type=bind"],
-  "forwardPorts": ["3001:3000"],
-  "remoteUser": "root"
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+  "postCreateCommand": ["/app/core/entrypoint.sh"],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "fish"
+      }
+    }
+  }
 }

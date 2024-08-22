@@ -32,7 +32,7 @@ You can extend any devbox image with this method.
 ## Dockerfile
 
 ```dockerfile
-FROM tdim/devbox:core
+FROM cto4/devbox:core
 
 # Image info
 LABEL maintainer="Your Name <user@domain.tld>" \

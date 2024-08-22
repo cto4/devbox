@@ -1,4 +1,4 @@
-FROM tdim/devbox:core
+FROM cto4/devbox:core
 
 # Image info
 LABEL maintainer="Ibrahim Megahed <tdim.dev@gmail.com>" \
@@ -6,7 +6,7 @@ LABEL maintainer="Ibrahim Megahed <tdim.dev@gmail.com>" \
   org.opencontainers.image.description="The official DevBox node environment with popular linux tools on Alpine-Linux." \
   org.opencontainers.image.authors="Ibrahim Megahed <tdim.dev@gmail.com>" \
   org.opencontainers.image.version="1.0.0" \
-  build="2-Aug-2024"
+  build="22-Aug-2024"
 
 # Image source
 COPY ./src/node /app/node

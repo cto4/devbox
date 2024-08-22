@@ -65,23 +65,23 @@ fi
 case "$1" in
     latest)
         banner
-        docker buildx build -t tdim/devbox:latest -f ./Dockerfile .
+        docker buildx build -t cto4/devbox:latest -f ./Dockerfile .
         ;;
     core)
         banner
-        docker buildx build -t tdim/devbox:core -f ./Dockerfile .
+        docker buildx build -t cto4/devbox:core -f ./Dockerfile .
         ;;
     node)
         banner
-        docker buildx build -t tdim/devbox:node -f ./node.Dockerfile .
+        docker buildx build -t cto4/devbox:node -f ./node.Dockerfile .
         ;;
     php)
         banner
-        docker buildx build -t tdim/devbox:php -f ./php.Dockerfile .
+        docker buildx build -t cto4/devbox:php -f ./php.Dockerfile .
         ;;
     # go)
     #     banner
-    #     docker buildx build -t tdim/devbox:go -f ./go.Dockerfile .
+    #     docker buildx build -t cto4/devbox:go -f ./go.Dockerfile .
     #     ;;
     *)
         banner

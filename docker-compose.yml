@@ -1,14 +1,14 @@
 services:
   corebox:
     container_name: corebox
-    image: tdim/devbox:core
+    image: cto4/devbox:core
     ports:
       - 3001:3000
     volumes:
       - /path/to/project:/workspace
   nodebox:
     container_name: nodebox
-    image: tdim/devbox:node
+    image: cto4/devbox:node
     ports:
       - 3002:3000
     volumes:
@@ -16,14 +16,14 @@ services:
       - /path/to/.pnpm-store:/root/.local/share/pnpm/store
   phpbox:
     container_name: phpbox
-    image: tdim/devbox:php
+    image: cto4/devbox:php
     ports:
       - 3003:3000
     volumes:
       - /path/to/project:/workspace
   gobox:
     container_name: gobox
-    image: tdim/devbox:go
+    image: cto4/devbox:go
     ports:
       - 3004:3000
     volumes:
