@@ -1,0 +1,9 @@
+{
+  "name": "DevBox PHP Container",
+  "image": "tdim/devbox:php",
+  "workspaceFolder": "/workspace",
+  "initializeCommand": "fish",
+  "mounts": ["source=${localWorkspaceFolder},target=/workspace,type=bind"],
+  "forwardPorts": ["3003:3000"],
+  "remoteUser": "root"
+}
